@@ -183,7 +183,7 @@ gap: 10px;
     min-width: 216px;
     min-height: 50px;
 }
-.visually-hidden {
+.visually-hiddens {
     position: absolute;
     width: 1px;
     height: 1px;
