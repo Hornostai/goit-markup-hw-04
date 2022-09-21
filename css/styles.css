@@ -92,27 +92,24 @@ span{
 }
 /* site nav*/
 .header-contact-link{
-margin-right: 50px;
 display: flex;
 align-items: center;
 gap: 10px;
+    fill: var(--icons);
+}
+.header-contact-link:hover,
+.header-contact-link:focus{
+ fill: var(--accent-color);
+ color: var(--accent-color);
+}
+.retreat{
+    margin-right: 30px;
 }
 .contact-container{
     display: flex;
     align-items: center;
-    margin-right: 50px;
 }
-.contact-link-icons{
-    fill: var(--title-text-color);
-}
-.contact-link-icons:hover,
-.contact-link-icons:focus{
-   fill: var(--accent-color);
-}
-.link:hover,
-.link:focus {
-    color: var(--accent-color);
-}
+
 .link {
     font-size: 14px;
     line-height: calc(16/14);
@@ -149,13 +146,12 @@ gap: 10px;
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
    ),
-   url(/images/Imaiges\(1\).jpg);
+   url(../images/colleagues.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
    
 }
-
 .box-text {
     color: var(--white-standart);
     font-size: 44px;
@@ -208,7 +204,6 @@ gap: 10px;
 
 .box-content{
     display: flex;
-    align-items: center;
     gap: 30px;
 }
 .content {
@@ -229,7 +224,7 @@ gap: 10px;
         justify-content: center;
     background-color: var(--dark-white);
     border-radius: 4%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .aside {
@@ -300,7 +295,7 @@ gap: 10px;
     line-height: calc(19/16);
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 .subject {
     font-weight: 700;
@@ -309,6 +304,12 @@ gap: 10px;
         letter-spacing: 0.06em;
 
 }
+.subject-images:hover,
+.subject-images:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;} 
 .subject-container-text{
     padding-top:  20px;
     padding-right: 24px;
@@ -332,7 +333,7 @@ gap: 10px;
 .box-content-icons:focus{
     background-color: var(--accent-color);
 }
-.box-content{
+.box-content-team{
     display: flex;
         justify-content: center;
         gap: 10px;
@@ -358,10 +359,15 @@ justify-content: center;
 }
 .footer-container{
     display: flex;
+    align-items: center;
+}
+.footer-contact{
+    display: flex;
     flex-direction: column;
     gap: 9px;
 }
-.logotype{color: var(--accent-color);
+.logotype{
+    color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.19;
@@ -399,12 +405,6 @@ justify-content: center;
         line-height: (24/14);
 }
 .conecting {
-position: absolute;
-    width: 116px;
-    height: 16px;
-    left: 516px;
-    top: 2748px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -412,8 +412,8 @@ position: absolute;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: var(--white-standart);
+    margin-bottom: 20px;
 }
 .button-container{
     display: flex;
@@ -434,14 +434,13 @@ position: absolute;
     letter-spacing: 0.03em;
     cursor: pointer;
     padding: 6px 20px;
-    
-   
 }
 .button-list:hover,
 .button-list:focus {
     background-color: var(--accent-color);
     cursor: pointer;
     color: var(--white-standart);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .subject-container{
     display: flex;
@@ -460,34 +459,26 @@ color: var(--primary-text-color);
 .costums-list{
     width: 170px;
     height: 92px;
+}
+.coustums-link{
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--icons);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: var(--icons);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: var(--icons);
 }
-.costums-icons{
-    fill: var(--icons);
-}
-.coustums-link:hover .costums-icons,
-.coustums-link:focus .costums-icons{
+.coustums-link:hover,
+.coustums-link:focus{
     fill: var(--accent-color);
-}
-.costums-list:hover,
-.costums-list:focus{
-  border-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 .costums-box{
     display: flex;
     justify-content: center;
     gap: 30px;
-}
-.box-conecting{
-width: 206px;
-    height: 44px;
-    left: 516px;
-    top: 2784px;
 }
 .box-conecting-icons{
     width: 44px;
@@ -508,6 +499,8 @@ width: 206px;
 }
 .conecting-list{
     display: flex;
-    justify-content: center;
     gap: 10px;
+}
+.adress-container{
+    margin-right: 70px;
 }
